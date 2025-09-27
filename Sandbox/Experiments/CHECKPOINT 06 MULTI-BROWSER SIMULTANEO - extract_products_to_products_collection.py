@@ -2179,8 +2179,8 @@ def process_single_category(category_data):
         driver.quit()
         driver = None
 
-        # Divide product types into 15 chunks
-        num_chunks = 15  # RESTORED TO ORIGINAL VALUE
+        # Divide product types into 12 chunks
+        num_chunks = 12  # REDUCED FROM 15 FOR BETTER PERFORMANCE
         chunk_size = total_types // num_chunks
         remainder = total_types % num_chunks
 
