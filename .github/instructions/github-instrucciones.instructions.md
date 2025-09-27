@@ -80,7 +80,7 @@ El versionado es fundamental en el desarrollo y debe estar **siempre al inicio d
 
 - **Contador incremental**: Cada tipo mantiene su propio contador
 - **Por feature/branch**: Reinicia contador en branches específicas
-- **Archivo de referencia**: Mantén `docs/commit-counter.txt` actualizado
+- **Archivo de referencia**: Mantén `docs/commit-counter.txt` actualizado con contadores por tipo (e.g., FEAT: 5, FIX: 2). Este archivo debe incrementarse manualmente antes de cada commit para asegurar secuencia correcta.
 - **Ejemplos**:
   - Primera feature: `[FEAT-001]`
   - Segundo fix: `[FIX-002]`
@@ -112,10 +112,12 @@ Cambios varios sin versionado
 
 ### Flujo de Versionado
 
-1. **Antes de cada commit**: Verifica el último número usado en ese tipo
-2. **Actualiza contador**: Incrementa el número correspondiente
-3. **Commit con versionado**: Incluye [TIPO-NNN] al inicio del mensaje
-4. **Documenta**: Actualiza `docs/commit-counter.txt` si existe
+1. **Antes de cada commit**: Verifica el último número usado en ese tipo usando uno de estos métodos:
+   - **Método 1 (Recomendado - Archivo de contador)**: Revisa y actualiza `docs/commit-counter.txt`. Incrementa el contador correspondiente al tipo (e.g., si FEAT es 5, usa 6 para el próximo).
+   - **Método 2 (Historial de Git)**: Ejecuta `git log --oneline --grep='\[TIPO-' | head -1` (reemplaza TIPO con el tipo, e.g., FEAT). Extrae el número del mensaje y incrementa.
+2. **Actualiza contador**: Si usas el archivo, edítalo con el nuevo número después de verificar.
+3. **Commit con versionado**: Incluye [TIPO-NNN] al inicio del mensaje, usando el número incrementado.
+4. **Documenta**: Actualiza `docs/commit-counter.txt` con el nuevo contador después del commit para mantener consistencia.
 
 ### Herramientas de Apoyo
 
