@@ -1,0 +1,27 @@
+================================================================================
+REPORTE FINAL DE EXTRACCIÓN - FIRST_CATEGORY_ONLY
+Fecha: 2025-09-26 18:15:48
+================================================================================
+
+RESUMEN GENERAL:
+- Total de tipos de producto procesados: 5
+- Tipos procesados al 100%: 0
+- Tipos procesados con problemas: 0
+- Tipos que fallaron completamente: 5
+
+✅ TIPOS DE PRODUCTO REGISTRADOS AL 100%:
+  (Ninguno)
+
+⚠️ TIPOS DE PRODUCTO CON PROBLEMAS:
+  (Ninguno)
+
+❌ TIPOS DE PRODUCTO QUE FALLARON:
+  - Accesorio: Processing failed: New tab was not opened by Ctrl+Click
+  - Accesorio para calefactor a leña: Processing failed: New tab was not opened by Ctrl+Click
+  - Accesorio para freidora: Processing failed: New tab was not opened by Ctrl+Click
+  - Accesorio raviolero: Processing failed: New tab was not opened by Ctrl+Click
+  - Adaptador a HDMI: Processing failed: New tab was not opened by Ctrl+Click
+
+================================================================================
+FIN DEL REPORTE
+================================================================================
